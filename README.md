@@ -38,7 +38,8 @@
 ## Commitlint
 
 > Is a cli tool, which parses the commit message against 
-> **conventional commit** specification ([more about con. commits](https://www.conventionalcommits.org/en/v1.0.0/)).[Commitlint Website](https://commitlint.js.org/#/?id=getting-started).
+> **conventional commit** specification ([more about con. commits](https://www.conventionalcommits.org/en/v1.0.0/)). 
+> For more information visit [Commitlint Website](https://commitlint.js.org/#/?id=getting-started).
 
 ### How to set up
 
@@ -47,11 +48,15 @@
    npm i @commitlint/cli -D
    npm i @commitlint/config-conventional -D
    ```
-2. Add to [husky](#husky) commit-msg hook
+2. Configuration
+   ```
+   echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+   ```
+3. Add to [husky](#husky) commit-msg hook
    ```
    npx husky add .husky/commit-msg "npx --no -- commitlint --edit $1"
    ```
-3. Make a commit
+4. Make a commit
    ```
    git add .
    git commit -m "Bad commit msg" => Error
