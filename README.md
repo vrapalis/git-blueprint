@@ -21,7 +21,7 @@
     ```
     npm install husky -D
     npm set-script prepare "husky install"
-    npm run install (prepare script will run automaticly)
+    npm install (prepare script will run automaticly)
     ```
 2. Add hooks (git)
     ```
