@@ -27,10 +27,10 @@
     ```
     npx husky add .husky/pre-commit "npm test"
     npx husky add .husky/commit-msg "(every command you want)"
-    git add . 
     ```
 3. Make a commit
     ```
+   git add . 
    git commit -m "feat(button): Implemented button"
    "npm test (your commands in pre-commit hook)" will run every time you commit
    ```
