@@ -38,7 +38,7 @@
 ## Commitlint
 
 > Is a cli tool, which parses the commit message against 
-> **conventional commit** specification ([more about con. commits](https://www.conventionalcommits.org/en/v1.0.0/)).
+> **conventional commit** specification ([more about con. commits](https://www.conventionalcommits.org/en/v1.0.0/)).[Commitlint Website](https://commitlint.js.org/#/?id=getting-started).
 
 ### How to set up
 
